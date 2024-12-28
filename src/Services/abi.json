@@ -1,0 +1,391 @@
+[
+	{
+		"inputs": [],
+		"name": "extensionIDCard",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "payPenalty",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "category",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "serviceLife",
+				"type": "uint256"
+			}
+		],
+		"name": "registerCar",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "number",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "validityPeriod",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "category",
+				"type": "string"
+			}
+		],
+		"name": "registerIDCard",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "surname",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "patronymic",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "yearBeginDriving",
+				"type": "uint256"
+			}
+		],
+		"name": "registerUser",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "number",
+				"type": "string"
+			}
+		],
+		"name": "sendPenalty",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			}
+		],
+		"name": "updateStatusUser",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "_Bank",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllNumberCar",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllUser",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "GetBalanceBank",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "ProfiCoin",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getDataUser",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "surname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "patronymic",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "yearBeginDriving",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint64",
+						"name": "penalty",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ProfiCoin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Users.User",
+				"name": "user",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "number",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "validityPeriod",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Users.IDCard",
+				"name": "idcard",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "serviceLife",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Users.Car",
+				"name": "car",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "timePenalty",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Users.Penalty[]",
+				"name": "penalty",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			}
+		],
+		"name": "getDataUserByAddress",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "surname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "patronymic",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "yearBeginDriving",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint64",
+						"name": "penalty",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ProfiCoin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Users.User",
+				"name": "user",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "number",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "validityPeriod",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Users.IDCard",
+				"name": "idcard",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "serviceLife",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Users.Car",
+				"name": "car",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "timePenalty",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Users.Penalty[]",
+				"name": "penalty",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

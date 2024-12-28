@@ -1,0 +1,12 @@
+.navbar-main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navbar-wallet-data {
+    cursor: pointer;
+}
